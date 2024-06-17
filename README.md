@@ -9,6 +9,7 @@
 
 
 
+
 █░█░█ █▀▀ █░░ █▀▀ █▀█ █▀▄▀█ █▀▀   ▀█▀ █▀█   █▀▄▀█ █▄█   █▀▄ █▀█ █▀▀ █▄▀ █▀▀ █▀█   █▀█ █▀█ █▀█ ░░█ █▀▀ █▀▀ ▀█▀   ▀ ▀▄
 ▀▄▀▄▀ ██▄ █▄▄ █▄▄ █▄█ █░▀░█ ██▄   ░█░ █▄█   █░▀░█ ░█░   █▄▀ █▄█ █▄▄ █░█ ██▄ █▀▄   █▀▀ █▀▄ █▄█ █▄█ ██▄ █▄▄ ░█░   ▄ ▄▀
 
@@ -114,7 +115,14 @@ if the container is in Exited then there must be a problem, so I ran the command
 sudo docker logs <container-id>
 
 The result of all the work till now before and after running the yolo5:
+BEFORE:
+![elephants-900x450 (1)]([https://your-image-url.type](https://github.com/WalaaHijazi1/docker_project/assets/151656646/1cc82598-e666-4eec-905d-b400d7a42525) with <img src="https://your-image-url.type" width="450" height="250">
 
+![elephants-900x450 (1)](https://github.com/WalaaHijazi1/docker_project/assets/151656646/1cc82598-e666-4eec-905d-b400d7a42525)
+
+
+
+AFTER:
 ![elephants-900x450](https://github.com/WalaaHijazi1/docker_project/assets/151656646/6ae16e8c-15e0-488b-af85-64c288acade3)
 
 
