@@ -116,7 +116,7 @@ sudo docker logs <container-id>
 
 The result of all the work till now before and after running the yolo5:
 BEFORE:
-<img src="[https://github.com/WalaaHijazi1/docker_project/assets/151656646/1cc82598-e666-4eec-905d-b400d7a42525]" width="450" height="250">
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/1cc82598-e666-4eec-905d-b400d7a42525.jpg" width="450" height="250">
 
 ![elephants-900x450 (1)](https://github.com/WalaaHijazi1/docker_project/assets/151656646/1cc82598-e666-4eec-905d-b400d7a42525)
 
