@@ -150,7 +150,7 @@ The Python app processes the message, executes the desired logic, and may send a
  which then delivers the response to the user.
 The webhook method consists of simple two steps:
 
-<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/8df38995-79e3-445d-bbe1-5671da2e9530.jpg" width="250" height="100">
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/8df38995-79e3-445d-bbe1-5671da2e9530.jpg" width="280" height="100">
 
 
 Setting your chat app URL in Telegram Servers:
@@ -158,7 +158,7 @@ Setting your chat app URL in Telegram Servers:
 Once the webhook URL is set, Telegram servers start sending HTTPS POST requests to the specified webhook URL whenever
 there are updates, such as new messages or events, for the bot.
 
-<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/9be5aff6-aed9-4309-af4c-f91edd9b0469.jpg" width="250" height="100">
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/9be5aff6-aed9-4309-af4c-f91edd9b0469.jpg" width="280" height="100">
 
 
 In order for the Telegram servers to work it would need access the webhook URL over the internet in order to send updates,
@@ -197,7 +197,7 @@ It’s nothing but a simple flask webserver that uses a Bot instance to handle i
 
 The default behavior of the Bot class is to “echo” the incoming messages, the results are:
 
-<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/3bf7e829-f7a8-46d6-835a-c11ebf5914c0.jpg" width="200" height="100">
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/3bf7e829-f7a8-46d6-835a-c11ebf5914c0.jpg" width="240" height="140">
 
 
 
@@ -214,7 +214,7 @@ In app.py, change the instantiated instance to the QuoteBot:
 
 Running the QuoteBot I recieved the result:
 
-<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/60dd00ee-4ec2-4f77-9e00-4eb25dd9bf71.jpg" width="200" height="100">
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/60dd00ee-4ec2-4f77-9e00-4eb25dd9bf71.jpg" width="240" height="140">
 
 
                 𝘽𝙪𝙞𝙡𝙙𝙞𝙣𝙜 𝙏𝙝𝙚 𝙊𝙗𝙟𝙚𝙘𝙩𝘿𝙚𝙩𝙚𝙘𝙩𝙞𝙤𝙣 𝘾𝙡𝙖𝙨𝙨
