@@ -115,11 +115,13 @@ sudo docker logs <container-id>
 
 The result of all the work till now before and after running the yolo5:
 
+![elephants-900x450](https://github.com/WalaaHijazi1/docker_project/assets/151656646/6ae16e8c-15e0-488b-af85-64c288acade3)
+
 
 (Put the images before and after)
 
-𝕀𝕞𝕡𝕝𝕖𝕞𝕖𝕟𝕥𝕚𝕟𝕘 𝕋𝕙𝕖 ℙ𝕠𝕝𝕪𝕓𝕠𝕥 𝕄𝕚𝕔𝕣𝕠𝕤𝕖𝕣𝕧𝕚𝕔𝕖
-𝙄𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙞𝙣𝙜 𝙏𝙝𝙚 𝙋𝙤𝙡𝙮𝙗𝙤𝙩 𝙈𝙞𝙘𝙧𝙤𝙨𝙚𝙧𝙫𝙞𝙘𝙚
+
+              𝙄𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙞𝙣𝙜 𝙏𝙝𝙚 𝙋𝙤𝙡𝙮𝙗𝙤𝙩 𝙈𝙞𝙘𝙧𝙤𝙨𝙚𝙧𝙫𝙞𝙘𝙚
 
 In this part I ran the Telegram bot, and started the whole service:
 
@@ -174,8 +176,8 @@ After starting the service I was able to get my bot public URL, it should be lik
 https://16ae-2a06-c701-4501-3a00-ecce-30e9-3e61-3069.ngrok-free.app
 
 
-𝕋𝕣𝕪𝕚𝕟𝕘 𝕥𝕙𝕖 𝕓𝕠𝕥 𝕗𝕦𝕟𝕔𝕥𝕚𝕠𝕟𝕒𝕝𝕚𝕥𝕪
-𝙏𝙧𝙮𝙞𝙣𝙜 𝙩𝙝𝙚 𝙗𝙤𝙩 𝙛𝙪𝙣𝙘𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮
+
+                𝙏𝙧𝙮𝙞𝙣𝙜 𝙩𝙝𝙚 𝙗𝙤𝙩 𝙛𝙪𝙣𝙘𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮
 
 After copying the polybot from the course material in git:
 Under polybot/bot.py I was given a class called Bot. This class implements a simple telegram bot, as follows:
@@ -190,8 +192,7 @@ The default behavior of the Bot class is to “echo” the incoming messages, th
 <HERE SHOULD BE THE IMAGE OF MESSAGE AND THE RESPOND OF THE BOT>
 
 
-𝕋𝕙𝕖 ℚ𝕦𝕠𝕥𝕖𝔹𝕠𝕥 𝕔𝕝𝕒𝕤𝕤
-𝙏𝙝𝙚 𝙌𝙪𝙤𝙩𝙚𝘽𝙤𝙩 𝙘𝙡𝙖𝙨𝙨
+                   𝙏𝙝𝙚 𝙌𝙪𝙤𝙩𝙚𝘽𝙤𝙩 𝙘𝙡𝙖𝙨𝙨
 
 In bot.py I was  given a class called QuoteBot which inherits from Bot.
 Upon incoming messages, this bot echoing the message while quoting the original message, unless the user is asking politely not to quote.
@@ -204,8 +205,7 @@ In app.py, change the instantiated instance to the QuoteBot:
 Running the QuoteBot I recieved the result:
 < IMMAGE OF THE IMAGE RESULT OF THE BOT MESSAGE >
 
-𝔹𝕦𝕚𝕝𝕕𝕚𝕟𝕘 𝕋𝕙𝕖 𝕆𝕓𝕛𝕖𝕔𝕥𝔻𝕖𝕥𝕖𝕔𝕥𝕚𝕠𝕟 ℂ𝕝𝕒𝕤𝕤
-𝘽𝙪𝙞𝙡𝙙𝙞𝙣𝙜 𝙏𝙝𝙚 𝙊𝙗𝙟𝙚𝙘𝙩𝘿𝙚𝙩𝙚𝙘𝙩𝙞𝙤𝙣 𝘾𝙡𝙖𝙨𝙨
+                𝘽𝙪𝙞𝙡𝙙𝙞𝙣𝙜 𝙏𝙝𝙚 𝙊𝙗𝙟𝙚𝙘𝙩𝘿𝙚𝙩𝙚𝙘𝙩𝙞𝙤𝙣 𝘾𝙡𝙖𝙨𝙨
 
 in the polybot file there is a bot.py python file, it has an ObjectDetectionBot class with a
 handle_message() method that handles incoming messages from end-users.
