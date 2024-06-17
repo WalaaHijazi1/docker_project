@@ -1,0 +1,100 @@
+version: '3.8'
+services:
+  mongo1:
+    restart: always
+    image: mongo:5
+    command: mongod --replSet rs0 --bind_ip localhost,mongo1
+    container_name: mongo1
+    volumes:
+      - mongoMainVol:/data/db
+    ports:
+      - "27017:27017"
+    depends_on:
+      - mongo2
+      - mongo3
+    networks:
+      - mongoCluster
+    healthcheck:
+      test: echo "try { rs.status() } catch (err) { rs.initiate({_id:'rs0',members:[{_id:0,host:'mongo1:27017',priority:1},{_id:1,host:'mongo2:27017',priority:0.5},{_id:2,host:'mongo3:27017',priority:0.5}]}) }" | mongosh --port 27017 --quiet
+      interval: 5s
+      timeout: 30s
+      start_period: 0s
+      retries: 30
+  mongo2:
+    restart: always
+    image: mongo:5
+    command: mongod --replSet rs0 --bind_ip localhost,mongo2
+    container_name: mongo2
+    volumes:
+      - mongoSec1Vol:/data/db
+    ports:
+      - "27018:27017"
+    networks:
+      - mongoCluster
+  mongo3:
+    restart: always
+    image: mongo:5
+    command: mongod --replSet rs0 --bind_ip localhost,mongo3
+    container_name: mongo3
+    volumes:
+      - mongoSec2Vol:/data/db
+    ports:
+      - "27019:27017"
+    networks:
+      - mongoCluster
+  polybot:
+    build: ./polybot  # Use this if you are building the image locally
+    container_name: polybot-app
+    environment:
+      TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}
+      TELEGRAM_APP_URL: ${TELEGRAM_APP_URL}
+      BUCKET_NAME: ${BUCKET_NAME}
+    depends_on:
+      - mongo1
+      - yolo5-app
+    ports:
+      - "8443:8443"
+    networks:
+      - mongoCluster
+    volumes:
+      - ./polybot_data:/app/data
+    secrets:
+      - polybot_SecretFile
+  yolo5-app:
+    build: ./yolo5  # Use this if you are building the image locally
+    container_name: yolo5-app
+    environment:
+      BUCKET_NAME: ${BUCKET_NAME}
+    ports:
+      - "8081:8081"
+    networks:
+      - mongoCluster
+    volumes:
+      - ./yolo5_data:/app/data
+    secrets:
+      - yolo5_SecretFile
+  ngrok:
+    image: ngrok/ngrok
+    container_name: ngrok
+    secrets:
+     - My_Secret
+    environment:
+      NGROK_AUTHTOKEN: ${NGROK_TOKEN}
+    networks:
+     - mongoCluster
+    command: ["http","--domain=${NGROK_URL}","polybot:8443"]
+    depends_on:
+     - polybot
+networks:
+  mongoCluster:
+volumes:
+  mongoMainVol:
+  mongoSec1Vol:
+  mongoSec2Vol:
+secrets:
+  polybot_SecretFile:
+    file: .env_poly
+  yolo5_SecretFile:
+    file: .env_yolo
+  My_Secret:
+    file: .env

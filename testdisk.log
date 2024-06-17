@@ -1,0 +1,25 @@
+
+
+Sat Jun 15 19:27:22 2024
+Command line: TestDisk
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 6.8.0-1008-aws (#8-Ubuntu SMP Sat Apr 20 00:46:25 UTC 2024) x86_64
+Compiler: GCC 13.2
+ext2fs lib: 1.47.0, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.4
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop5 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop6 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop7 - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/xvda - 17 GB / 16 GiB - CHS 2088 255 63, sector size=512
+Disk /dev/loop0 - 26 MB / 25 MiB - 51672 sectors (RO), sector size=512
+Disk /dev/loop1 - 40 MB / 38 MiB - 79328 sectors (RO), sector size=512
+Disk /dev/loop2 - 58 MB / 55 MiB - 113992 sectors (RO), sector size=512
+Disk /dev/loop3 - 40 MB / 38 MiB - 79520 sectors (RO), sector size=512
+Disk /dev/loop4 - 58 MB / 55 MiB - 113992 sectors (RO), sector size=512
+
+
+TestDisk exited normally.
