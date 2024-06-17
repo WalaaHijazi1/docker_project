@@ -115,6 +115,7 @@ if the container is in Exited then there must be a problem, so I ran the command
 sudo docker logs <container-id>
 
 The result of all the work till now before and after running the yolo5:
+
 BEFORE:
 
 <img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/1cc82598-e666-4eec-905d-b400d7a42525.jpg" width="450" height="250">
@@ -148,14 +149,16 @@ called webhook (long-polling and websocket are other possible methods which woul
 The Python app processes the message, executes the desired logic, and may send a response back to Telegram servers,
  which then delivers the response to the user.
 The webhook method consists of simple two steps:
-<an Image explaining the step>
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/8df38995-79e3-445d-bbe1-5671da2e9530.jpg" width="100" height="50">
+
+
 Setting your chat app URL in Telegram Servers:
-< THE IMAGE IS IN HERE >
 
 Once the webhook URL is set, Telegram servers start sending HTTPS POST requests to the specified webhook URL whenever
 there are updates, such as new messages or events, for the bot.
 
-< A SECOND IMAGE SHOULD BE IN HERE >
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/9be5aff6-aed9-4309-af4c-f91edd9b0469.jpg" width="100" height="50">
 
 
 In order for the Telegram servers to work it would need access the webhook URL over the internet in order to send updates,
@@ -193,7 +196,10 @@ The polybot/app.py is the main app entrypoint.
 It’s nothing but a simple flask webserver that uses a Bot instance to handle incoming messages, caught in the webhook endpoint function.
 
 The default behavior of the Bot class is to “echo” the incoming messages, the results are:
-<HERE SHOULD BE THE IMAGE OF MESSAGE AND THE RESPOND OF THE BOT>
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/3bf7e829-f7a8-46d6-835a-c11ebf5914c0.jpg" width="80" height="40">
+
+
 
 
                    𝙏𝙝𝙚 𝙌𝙪𝙤𝙩𝙚𝘽𝙤𝙩 𝙘𝙡𝙖𝙨𝙨
@@ -207,7 +213,9 @@ In app.py, change the instantiated instance to the QuoteBot:
 + QuoteBot(TELEGRAM_TOKEN, TELEGRAM_APP_URL)
 
 Running the QuoteBot I recieved the result:
-< IMMAGE OF THE IMAGE RESULT OF THE BOT MESSAGE >
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/60dd00ee-4ec2-4f77-9e00-4eb25dd9bf71.jpg" width="80" height="40">
+
 
                 𝘽𝙪𝙞𝙡𝙙𝙞𝙣𝙜 𝙏𝙝𝙚 𝙊𝙗𝙟𝙚𝙘𝙩𝘿𝙚𝙩𝙚𝙘𝙩𝙞𝙤𝙣 𝘾𝙡𝙖𝙨𝙨
 
@@ -222,3 +230,15 @@ In the bot.py python file I comleted the #TODOs in order to make the polybot fun
 Then to check the functionality of the bot, I sent an image through the bot and received the a message of the items in the same
 image, and because my S3 bucket in the AWS service I have the same image, so I cfound the result image in the S3 bucket under a prediction
 file, the results are:
+
+Example 1:
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/79aa3ae1-1183-4a59-9ac2-4ac41439c9a6.jpg" width="150" height="100">
+
+
+Example 2:
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/f0f4ba84-42e7-4619-87ed-2f93b0e1c845.jpg" width="150" height="100">
+
+
+
