@@ -116,24 +116,12 @@ sudo docker logs <container-id>
 
 The result of all the work till now before and after running the yolo5:
 BEFORE:
+
 <img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/1cc82598-e666-4eec-905d-b400d7a42525.jpg" width="450" height="250">
-
-
-![elephants-900x450](https://github.com/WalaaHijazi1/docker_project/assets/151656646/311b0c3f-1ec3-41fd-9332-fc973d9cc264)
-
-
-![elephants-900x450 (1)](https://github.com/WalaaHijazi1/docker_project/assets/151656646/1cc82598-e666-4eec-905d-b400d7a42525)
-
-
 
 AFTER:
 
 <img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/311b0c3f-1ec3-41fd-9332-fc973d9cc264.jpg" width="450" height="250">
-
-
-
-![elephants-900x450](https://github.com/WalaaHijazi1/docker_project/assets/151656646/6ae16e8c-15e0-488b-af85-64c288acade3)
-
 
 
 
