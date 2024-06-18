@@ -40,8 +40,9 @@
 - **Details:** Contains logs and outputs from various disk testing and diagnostics procedures.
 =======
 
->>>>>>> origin/main
+<<<<<<< HEAD
 
+## Detailed Steps of How The Project Was Done:
 
 Now, I want to explain all the steps that I did in order to accomplish my docker project
 Here are steps of how I did the whole project:
