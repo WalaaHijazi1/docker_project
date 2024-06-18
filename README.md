@@ -218,3 +218,40 @@ In the bot.py python file I comleted the #TODOs in order to make the polybot fun
 Then to check the functionality of the bot, I sent an image through the bot and received the a message of the items in the same
 image, and because my S3 bucket in the AWS service I have the same image, so I cfound the result image in the S3 bucket under a prediction
 file, the results are:
+
+
+# My Docker Project
+
+## Project Files and Directories
+
+### polybot
+- **Description:** Contains scripts and configurations for the Polybot application.
+- **Details:** This directory includes the main logic and setup scripts for running the Polybot.
+
+### yolo5
+- **Description:** Includes implementation of the YOLOv5 object detection model.
+- **Details:** This folder contains the necessary code and configurations to deploy and run the YOLOv5 model.
+
+### yolov5
+- **Description:** This file is a cloned repository from: https://github.com/ultralytics/yolov5 .
+- **Details:** It has all the packages that is needed to function the YoloV5 app, and explenation about the AI tool, and it's function.
+
+### .env
+- **Description:** Environment variables for the general setup of the project.
+- **Details:** This file sets up environment variables used across different parts of the project.
+
+### .env_poly
+- **Description:** Specific environment variables for the Polybot application.
+- **Details:** Tailored environment settings for running the Polybot application smoothly.
+
+### .env_yolo
+- **Description:** Specific environment variables for the YOLO applications.
+- **Details:** Custom environment settings for the YOLOv5 implementations.
+
+### docker-compose.yaml
+- **Description:** Docker Compose configuration file for orchestrating multiple Docker containers.
+- **Details:** Defines the services, networks, and volumes needed for the project’s Docker containers.
+
+### testdisk.log
+- **Description:** Log file for disk tests and related diagnostics.
+- **Details:** Contains logs and outputs from various disk testing and diagnostics procedures.
