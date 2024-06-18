@@ -1,6 +1,6 @@
 
 
-<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/6d621350-ea49-4eef-9794-c979d532389b.jpg" width="650" height="300">
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/6d621350-ea49-4eef-9794-c979d532389b.jpg" width="850" height="200">
 
 
 Here I want to explain all the steps that I did in order to accomplish my docker project
