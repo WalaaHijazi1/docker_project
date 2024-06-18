@@ -221,6 +221,18 @@ Then to check the functionality of the bot, I sent an image through the bot and 
 image, and because my S3 bucket in the AWS service I have the same image, so I cfound the result image in the S3 bucket under a prediction
 file, the results are:
 
+
+Example 1:
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/79aa3ae1-1183-4a59-9ac2-4ac41439c9a6.jpg" width="450" height="400">
+
+
+Example 2:
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/f0f4ba84-42e7-4619-87ed-2f93b0e1c845.jpg" width="450" height="400">
+
+
+
 <<<<<<< HEAD
 
 # My Docker Project
@@ -259,15 +271,5 @@ file, the results are:
 - **Description:** Log file for disk tests and related diagnostics.
 - **Details:** Contains logs and outputs from various disk testing and diagnostics procedures.
 =======
-Example 1:
-
-<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/79aa3ae1-1183-4a59-9ac2-4ac41439c9a6.jpg" width="450" height="400">
-
-
-Example 2:
-
-<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/f0f4ba84-42e7-4619-87ed-2f93b0e1c845.jpg" width="450" height="400">
-
-
 
 >>>>>>> origin/main
