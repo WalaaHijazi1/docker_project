@@ -12,6 +12,7 @@
 █░█░█ █▀▀ █░░ █▀▀ █▀█ █▀▄▀█ █▀▀   ▀█▀ █▀█   █▀▄▀█ █▄█   █▀▄ █▀█ █▀▀ █▄▀ █▀▀ █▀█   █▀█ █▀█ █▀█ ░░█ █▀▀ █▀▀ ▀█▀   ▀ ▀▄
 ▀▄▀▄▀ ██▄ █▄▄ █▄▄ █▄█ █░▀░█ ██▄   ░█░ █▄█   █░▀░█ ░█░   █▄▀ █▄█ █▄▄ █░█ ██▄ █▀▄   █▀▀ █▀▄ █▄█ █▄█ ██▄ █▄▄ ░█░   ▄ ▄▀
 
+
 Here I want to explain all the steps that I did in order to accomplish my docker project
 Here are steps of how I did the whole project:
 
@@ -115,11 +116,17 @@ sudo docker logs <container-id>
 
 The result of all the work till now before and after running the yolo5:
 
+BEFORE:
 
-(Put the images before and after)
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/1cc82598-e666-4eec-905d-b400d7a42525.jpg" width="450" height="250">
 
-𝕀𝕞𝕡𝕝𝕖𝕞𝕖𝕟𝕥𝕚𝕟𝕘 𝕋𝕙𝕖 ℙ𝕠𝕝𝕪𝕓𝕠𝕥 𝕄𝕚𝕔𝕣𝕠𝕤𝕖𝕣𝕧𝕚𝕔𝕖
-𝙄𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙞𝙣𝙜 𝙏𝙝𝙚 𝙋𝙤𝙡𝙮𝙗𝙤𝙩 𝙈𝙞𝙘𝙧𝙤𝙨𝙚𝙧𝙫𝙞𝙘𝙚
+AFTER:
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/311b0c3f-1ec3-41fd-9332-fc973d9cc264.jpg" width="450" height="250">
+
+
+
+              𝙄𝙢𝙥𝙡𝙚𝙢𝙚𝙣𝙩𝙞𝙣𝙜 𝙏𝙝𝙚 𝙋𝙤𝙡𝙮𝙗𝙤𝙩 𝙈𝙞𝙘𝙧𝙤𝙨𝙚𝙧𝙫𝙞𝙘𝙚
 
 In this part I ran the Telegram bot, and started the whole service:
 
@@ -142,14 +149,16 @@ called webhook (long-polling and websocket are other possible methods which woul
 The Python app processes the message, executes the desired logic, and may send a response back to Telegram servers,
  which then delivers the response to the user.
 The webhook method consists of simple two steps:
-<an Image explaining the step>
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/8df38995-79e3-445d-bbe1-5671da2e9530.jpg" width="280" height="100">
+
+
 Setting your chat app URL in Telegram Servers:
-< THE IMAGE IS IN HERE >
 
 Once the webhook URL is set, Telegram servers start sending HTTPS POST requests to the specified webhook URL whenever
 there are updates, such as new messages or events, for the bot.
 
-< A SECOND IMAGE SHOULD BE IN HERE >
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/9be5aff6-aed9-4309-af4c-f91edd9b0469.jpg" width="280" height="100">
 
 
 In order for the Telegram servers to work it would need access the webhook URL over the internet in order to send updates,
@@ -174,8 +183,8 @@ After starting the service I was able to get my bot public URL, it should be lik
 https://16ae-2a06-c701-4501-3a00-ecce-30e9-3e61-3069.ngrok-free.app
 
 
-𝕋𝕣𝕪𝕚𝕟𝕘 𝕥𝕙𝕖 𝕓𝕠𝕥 𝕗𝕦𝕟𝕔𝕥𝕚𝕠𝕟𝕒𝕝𝕚𝕥𝕪
-𝙏𝙧𝙮𝙞𝙣𝙜 𝙩𝙝𝙚 𝙗𝙤𝙩 𝙛𝙪𝙣𝙘𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮
+
+                𝙏𝙧𝙮𝙞𝙣𝙜 𝙩𝙝𝙚 𝙗𝙤𝙩 𝙛𝙪𝙣𝙘𝙩𝙞𝙤𝙣𝙖𝙡𝙞𝙩𝙮
 
 After copying the polybot from the course material in git:
 Under polybot/bot.py I was given a class called Bot. This class implements a simple telegram bot, as follows:
@@ -187,11 +196,13 @@ The polybot/app.py is the main app entrypoint.
 It’s nothing but a simple flask webserver that uses a Bot instance to handle incoming messages, caught in the webhook endpoint function.
 
 The default behavior of the Bot class is to “echo” the incoming messages, the results are:
-<HERE SHOULD BE THE IMAGE OF MESSAGE AND THE RESPOND OF THE BOT>
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/3bf7e829-f7a8-46d6-835a-c11ebf5914c0.jpg" width="240" height="140">
 
 
-𝕋𝕙𝕖 ℚ𝕦𝕠𝕥𝕖𝔹𝕠𝕥 𝕔𝕝𝕒𝕤𝕤
-𝙏𝙝𝙚 𝙌𝙪𝙤𝙩𝙚𝘽𝙤𝙩 𝙘𝙡𝙖𝙨𝙨
+
+
+                   𝙏𝙝𝙚 𝙌𝙪𝙤𝙩𝙚𝘽𝙤𝙩 𝙘𝙡𝙖𝙨𝙨
 
 In bot.py I was  given a class called QuoteBot which inherits from Bot.
 Upon incoming messages, this bot echoing the message while quoting the original message, unless the user is asking politely not to quote.
@@ -202,10 +213,11 @@ In app.py, change the instantiated instance to the QuoteBot:
 + QuoteBot(TELEGRAM_TOKEN, TELEGRAM_APP_URL)
 
 Running the QuoteBot I recieved the result:
-< IMMAGE OF THE IMAGE RESULT OF THE BOT MESSAGE >
 
-𝔹𝕦𝕚𝕝𝕕𝕚𝕟𝕘 𝕋𝕙𝕖 𝕆𝕓𝕛𝕖𝕔𝕥𝔻𝕖𝕥𝕖𝕔𝕥𝕚𝕠𝕟 ℂ𝕝𝕒𝕤𝕤
-𝘽𝙪𝙞𝙡𝙙𝙞𝙣𝙜 𝙏𝙝𝙚 𝙊𝙗𝙟𝙚𝙘𝙩𝘿𝙚𝙩𝙚𝙘𝙩𝙞𝙤𝙣 𝘾𝙡𝙖𝙨𝙨
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/60dd00ee-4ec2-4f77-9e00-4eb25dd9bf71.jpg" width="240" height="140">
+
+
+                𝘽𝙪𝙞𝙡𝙙𝙞𝙣𝙜 𝙏𝙝𝙚 𝙊𝙗𝙟𝙚𝙘𝙩𝘿𝙚𝙩𝙚𝙘𝙩𝙞𝙤𝙣 𝘾𝙡𝙖𝙨𝙨
 
 in the polybot file there is a bot.py python file, it has an ObjectDetectionBot class with a
 handle_message() method that handles incoming messages from end-users.
@@ -219,6 +231,7 @@ Then to check the functionality of the bot, I sent an image through the bot and 
 image, and because my S3 bucket in the AWS service I have the same image, so I cfound the result image in the S3 bucket under a prediction
 file, the results are:
 
+<<<<<<< HEAD
 
 # My Docker Project
 
@@ -255,3 +268,16 @@ file, the results are:
 ### testdisk.log
 - **Description:** Log file for disk tests and related diagnostics.
 - **Details:** Contains logs and outputs from various disk testing and diagnostics procedures.
+=======
+Example 1:
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/79aa3ae1-1183-4a59-9ac2-4ac41439c9a6.jpg" width="450" height="400">
+
+
+Example 2:
+
+<img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/f0f4ba84-42e7-4619-87ed-2f93b0e1c845.jpg" width="450" height="400">
+
+
+
+>>>>>>> origin/main
