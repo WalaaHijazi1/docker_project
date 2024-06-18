@@ -3,8 +3,6 @@
 <img src="https://github.com/WalaaHijazi1/docker_project/assets/151656646/6d621350-ea49-4eef-9794-c979d532389b.jpg" width="850" height="200">
 
 
-<<<<<<< HEAD
-
 ## Project Files and Directories
 
 ### polybot
@@ -39,8 +37,6 @@
 - **Description:** Log file for disk tests and related diagnostics.
 - **Details:** Contains logs and outputs from various disk testing and diagnostics procedures.
 =======
-
-<<<<<<< HEAD
 
 ## Detailed Steps of How The Project Was Done:
 
